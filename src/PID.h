@@ -2,6 +2,16 @@
 #define PID_H
 
 class PID {
+
+ double Kp;
+ double Ki;
+ double Kd;
+
+ double old_cte;
+ double diff_cte;
+ double cum_error;
+ vector<double> error_list;
+
  public:
   /**
    * Constructor
